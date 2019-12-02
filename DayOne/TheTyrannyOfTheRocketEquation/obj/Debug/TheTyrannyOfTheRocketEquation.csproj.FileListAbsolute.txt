@@ -1,0 +1,7 @@
+C:\source\GitHub\AdventOfCode2019\DayOne\TheTyrannyOfTheRocketEquation\bin\Debug\TheTyrannyOfTheRocketEquation.exe.config
+C:\source\GitHub\AdventOfCode2019\DayOne\TheTyrannyOfTheRocketEquation\bin\Debug\TheTyrannyOfTheRocketEquation.exe
+C:\source\GitHub\AdventOfCode2019\DayOne\TheTyrannyOfTheRocketEquation\bin\Debug\TheTyrannyOfTheRocketEquation.pdb
+C:\source\GitHub\AdventOfCode2019\DayOne\TheTyrannyOfTheRocketEquation\obj\Debug\TheTyrannyOfTheRocketEquation.csprojAssemblyReference.cache
+C:\source\GitHub\AdventOfCode2019\DayOne\TheTyrannyOfTheRocketEquation\obj\Debug\TheTyrannyOfTheRocketEquation.csproj.CoreCompileInputs.cache
+C:\source\GitHub\AdventOfCode2019\DayOne\TheTyrannyOfTheRocketEquation\obj\Debug\TheTyrannyOfTheRocketEquation.exe
+C:\source\GitHub\AdventOfCode2019\DayOne\TheTyrannyOfTheRocketEquation\obj\Debug\TheTyrannyOfTheRocketEquation.pdb

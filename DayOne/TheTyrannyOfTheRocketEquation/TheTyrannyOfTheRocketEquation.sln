@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheTyrannyOfTheRocketEquation", "TheTyrannyOfTheRocketEquation.csproj", "{6B347CE3-D25F-4C51-A13E-EEC04E21E6CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B347CE3-D25F-4C51-A13E-EEC04E21E6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B347CE3-D25F-4C51-A13E-EEC04E21E6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B347CE3-D25F-4C51-A13E-EEC04E21E6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B347CE3-D25F-4C51-A13E-EEC04E21E6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E031C98-3B52-409A-968E-0B90F0B07DE3}
+	EndGlobalSection
+EndGlobal
