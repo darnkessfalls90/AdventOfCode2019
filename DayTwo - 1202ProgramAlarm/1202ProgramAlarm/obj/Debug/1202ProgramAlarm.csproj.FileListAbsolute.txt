@@ -1,0 +1,7 @@
+C:\source\GitHub\AdventOfCode2019\DayTwo - 1202ProgramAlarm\1202ProgramAlarm\bin\Debug\1202ProgramAlarm.exe.config
+C:\source\GitHub\AdventOfCode2019\DayTwo - 1202ProgramAlarm\1202ProgramAlarm\bin\Debug\1202ProgramAlarm.exe
+C:\source\GitHub\AdventOfCode2019\DayTwo - 1202ProgramAlarm\1202ProgramAlarm\bin\Debug\1202ProgramAlarm.pdb
+C:\source\GitHub\AdventOfCode2019\DayTwo - 1202ProgramAlarm\1202ProgramAlarm\obj\Debug\1202ProgramAlarm.csprojAssemblyReference.cache
+C:\source\GitHub\AdventOfCode2019\DayTwo - 1202ProgramAlarm\1202ProgramAlarm\obj\Debug\1202ProgramAlarm.csproj.CoreCompileInputs.cache
+C:\source\GitHub\AdventOfCode2019\DayTwo - 1202ProgramAlarm\1202ProgramAlarm\obj\Debug\1202ProgramAlarm.exe
+C:\source\GitHub\AdventOfCode2019\DayTwo - 1202ProgramAlarm\1202ProgramAlarm\obj\Debug\1202ProgramAlarm.pdb
