@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossedWires", "CrossedWires.csproj", "{F5096F84-6CED-4F0D-8A3A-07CB1A6EBCC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5096F84-6CED-4F0D-8A3A-07CB1A6EBCC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5096F84-6CED-4F0D-8A3A-07CB1A6EBCC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5096F84-6CED-4F0D-8A3A-07CB1A6EBCC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5096F84-6CED-4F0D-8A3A-07CB1A6EBCC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE50D352-9A39-4762-A4FD-337DA9EBAA8E}
+	EndGlobalSection
+EndGlobal
