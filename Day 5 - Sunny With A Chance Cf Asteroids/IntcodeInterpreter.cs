@@ -81,7 +81,7 @@ namespace SunnyWithAChanceCfAsteroids
 
         private static int[] ReadInstruction(int instruction)
         {
-            if (instruction < 99)
+            if (instruction < 100)
                 return new int[] { instruction };
 
             var split = GetDigits(instruction);
