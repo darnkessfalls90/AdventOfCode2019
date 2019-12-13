@@ -1,0 +1,7 @@
+C:\source\GitHub\AdventOfCode2019\Day 7 - Amplification Circuit\bin\Debug\AmplificationCircuit.exe.config
+C:\source\GitHub\AdventOfCode2019\Day 7 - Amplification Circuit\bin\Debug\AmplificationCircuit.exe
+C:\source\GitHub\AdventOfCode2019\Day 7 - Amplification Circuit\bin\Debug\AmplificationCircuit.pdb
+C:\source\GitHub\AdventOfCode2019\Day 7 - Amplification Circuit\obj\Debug\AmplificationCircuit.csprojAssemblyReference.cache
+C:\source\GitHub\AdventOfCode2019\Day 7 - Amplification Circuit\obj\Debug\AmplificationCircuit.csproj.CoreCompileInputs.cache
+C:\source\GitHub\AdventOfCode2019\Day 7 - Amplification Circuit\obj\Debug\AmplificationCircuit.exe
+C:\source\GitHub\AdventOfCode2019\Day 7 - Amplification Circuit\obj\Debug\AmplificationCircuit.pdb
