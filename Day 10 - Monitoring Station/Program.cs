@@ -70,27 +70,53 @@ namespace MonitoringStation
         {
             CalculateAngles(asteroids, homeBase, height, width);
 
-            asteroids = asteroids.OrderBy(a => a.DistanceFromHome).ToArray();
+            asteroids = asteroids.OrderBy(a => a.AngleFromHome).ToArray();
+
+            var asteroidsByAngle = SortByAngle(asteroids);
+
             var currentAsteroid = 0;
             var destroyed = 0;
             while (asteroids.Any(a => a.DestroyedCount == -1))
             {
-                var current = asteroids[currentAsteroid];
-                if (current.DestroyedCount < 0)
+                foreach (var angle in asteroidsByAngle.Keys)
                 {
-                    if (current == homeBase)
+                    var current = asteroidsByAngle[angle].OrderBy(b => b.DistanceFromHome).FirstOrDefault(a => a.DestroyedCount == -1);
+
+                    if (current != null)
                     {
-                        homeBase.DestroyedCount = 0;
-                    } else if (CanSee(asteroids.Where(a => a.DestroyedCount == -1).ToArray(), homeBase, current))
-                    {
-                        current.DestroyedCount = ++destroyed;
+                        if (current == homeBase)
+                        {
+                            homeBase.DestroyedCount = 0;
+                        }
+                        else if (CanSee(asteroids.Where(a => a.DestroyedCount == -1).ToArray(), homeBase, current))
+                        {
+                            current.DestroyedCount = ++destroyed;
+                        }
                     }
+                    if (currentAsteroid >= asteroids.Count() - 1)
+                        currentAsteroid = 0;
+                    else
+                        currentAsteroid++;
                 }
-                if (currentAsteroid >= asteroids.Count() - 1)
-                    currentAsteroid = 0;
-                else
-                    currentAsteroid++;
             }
+        }
+
+        public static Dictionary<double, List<Asteroid>> SortByAngle(Asteroid[] astroids){
+            var result = new Dictionary<double, List<Asteroid>>();
+            foreach(var a in astroids)
+            {
+                if (result.ContainsKey(a.AngleFromHome))
+                {
+                    result[a.AngleFromHome].Add(a);
+                }
+                else
+                {
+                    var list = new List<Asteroid>();
+                    list.Add(a);
+                    result.Add(a.AngleFromHome, list);
+                }
+            }
+            return result;
         }
 
         public static Point GetStep(Asteroid home, Asteroid location)
@@ -174,16 +200,22 @@ namespace MonitoringStation
 
         public static void CalculateAngles(Asteroid[] asteroids, Asteroid center, int height, int width)
         {
-            Point startPoint = new Point(width / 2, 0);
-
             foreach (var asteroid in asteroids)
             {
-                var angle = GetAngle(center, startPoint, asteroid);
-                if (asteroid.X < startPoint.X)
-                    angle = (180 - angle) + 180;
-                asteroid.AngleFromHome = angle;
+                var dif = new Point(asteroid.Point.X - center.Point.X, asteroid.Point.Y - center.Point.Y);
+                var radians = Math.Atan2(dif.Y, dif.X);
 
-                asteroid.DistanceFromHome = Math.Abs(asteroid.X - center.X) + Math.Abs(asteroid.Y - center.Y);
+                asteroid.AngleFromHome = (radians * (180 / Math.PI)) + 90;
+
+                if (asteroid.AngleFromHome < 0)
+                    asteroid.AngleFromHome = 360 + asteroid.AngleFromHome;
+
+                //asteroid.AngleFromHome = GetAngle(center, new Point(width / 2, 0), asteroid);
+
+                //if (asteroid.AngleFromHome < 0)
+                //    asteroid.AngleFromHome = 360 + asteroid.AngleFromHome;
+
+                asteroid.DistanceFromHome = Math.Max(Math.Abs(asteroid.X - center.X), Math.Abs(asteroid.Y - center.Y));
             }
         }
 
@@ -244,7 +276,7 @@ namespace MonitoringStation
     {
         public int CanSeeCount { get; set; }
         public int DestroyedCount { get; set; } = -1;
-        public float AngleFromHome { get; set; }
+        public double AngleFromHome { get; set; }
         private Point point = new Point(0,0);
         public int X { get { return point.X; } set { point.X = value; } }
         public int Y { get { return point.Y; } set { point.Y = value; } }
