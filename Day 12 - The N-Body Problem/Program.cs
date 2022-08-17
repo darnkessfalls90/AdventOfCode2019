@@ -13,51 +13,58 @@ namespace NBodyProblem
         {
             var Io = new Moon()
             {
-                Position = new Coordinate(-8, -10, 0),
+                Position = new Coordinate(8, 0, 8),
                 Velocity = new Coordinate(0, 0, 0)
             };
 
             var Europa = new Moon()
             {
-                Position = new Coordinate(5, 5, 10),
+                Position = new Coordinate(0, -5, -10),
                 Velocity = new Coordinate(0, 0, 0)
             };
 
             var Ganymede = new Moon()
             {
-                Position = new Coordinate(2, -7, 3),
+                Position = new Coordinate(16, 10, -5),
                 Velocity = new Coordinate(0, 0, 0)
             };
 
             var Callisto = new Moon()
             {
-                Position = new Coordinate(9, -8, -3),
+                Position = new Coordinate(19, -10, -7),
                 Velocity = new Coordinate(0, 0, 0)
             };
 
             var moons = new Moon[] { Io, Europa, Ganymede, Callisto };
 
-            var states = new List<string>();
-            
             int i = 0;
-            while(!states.Contains(CalculateHash(moons)))
+            int xstate = -1, ystate = -1, zstate = -1;
+            while(xstate == -1 || ystate == -1 || zstate == -1)
             {
-                states.Add(CalculateHash(moons));
-
                 CalculateVelocity(moons);
                 ApplyVelocity(moons);
 
-                if(i == 99)
+                if(i == 999)
                 {
                     DisplayMoons(moons);
                     Console.WriteLine("Total Energy Part 1: " + moons.Sum(m => m.CalculateEnergy()));
                 }
 
                 i++;
+
+                if (xstate == -1 && moons.All(m => m.Velocity.X == 0))
+                    xstate = i;
+                if (ystate == -1 && moons.All(m => m.Velocity.Y == 0))
+                    ystate = i;
+                if (zstate == -1 && moons.All(m => m.Velocity.Z == 0))
+                    zstate = i;
+
+                
             }
 
-            DisplayMoons(moons);
-            Console.WriteLine("Returns to previous state at: " + i + " steps");
+
+            long foo = lcm(xstate, ystate, zstate) * 2;
+            Console.WriteLine("Returns to previous state at: " + foo + " steps");
             Console.ReadLine();
         }
 
@@ -122,8 +129,7 @@ namespace NBodyProblem
         {
             foreach (Moon moon in moons)
             {
-                Console.WriteLine("pos = <x=" + moon.Position.X + ", y=" + moon.Position.Y + ", z=" + moon.Position.Z
-                    + ">, vel = <x=" + moon.Velocity.X + ", y=" + moon.Velocity.Y + ", z=" + moon.Velocity.Z + ">");
+                Console.WriteLine(moon.ToString());
             }
         }
 
@@ -135,6 +141,27 @@ namespace NBodyProblem
                 hash.Append(moon.ToString());
             }
             return hash.ToString();
+        }
+
+        static long gcf(long a, long b)
+        {
+            while (b != 0)
+            {
+                long temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return a;
+        }
+
+        static long lcm(int a, long b)
+        {
+            return (a / gcf(a, b)) * b;
+        }
+
+        static long lcm(int a, int b, int c)
+        {
+            return lcm(a, lcm(b, (long)c));
         }
     }
 }
