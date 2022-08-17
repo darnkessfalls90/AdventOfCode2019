@@ -1,0 +1,7 @@
+C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 12 - The N-Body Problem\bin\Debug\NBodyProblem.exe.config
+C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 12 - The N-Body Problem\bin\Debug\NBodyProblem.exe
+C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 12 - The N-Body Problem\bin\Debug\NBodyProblem.pdb
+C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 12 - The N-Body Problem\obj\Debug\NBodyProblem.csproj.AssemblyReference.cache
+C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 12 - The N-Body Problem\obj\Debug\NBodyProblem.csproj.CoreCompileInputs.cache
+C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 12 - The N-Body Problem\obj\Debug\NBodyProblem.exe
+C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 12 - The N-Body Problem\obj\Debug\NBodyProblem.pdb
