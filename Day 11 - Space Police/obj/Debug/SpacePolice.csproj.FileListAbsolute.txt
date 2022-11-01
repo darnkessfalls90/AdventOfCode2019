@@ -1,8 +1,0 @@
-C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 11 - Space Police\bin\Debug\SpacePolice.exe.config
-C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 11 - Space Police\bin\Debug\SpacePolice.exe
-C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 11 - Space Police\bin\Debug\SpacePolice.pdb
-C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 11 - Space Police\obj\Debug\SpacePolice.csproj.AssemblyReference.cache
-C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 11 - Space Police\obj\Debug\SpacePolice.csproj.CoreCompileInputs.cache
-C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 11 - Space Police\obj\Debug\SpacePolice.exe
-C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 11 - Space Police\obj\Debug\SpacePolice.pdb
-C:\Users\jsharp\AdventOfCode\AdventOfCode2019\Day 11 - Space Police\bin\Debug\Input.txt

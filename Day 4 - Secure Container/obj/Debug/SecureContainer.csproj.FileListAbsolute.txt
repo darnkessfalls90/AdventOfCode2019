@@ -1,7 +1,0 @@
-C:\source\GitHub\AdventOfCode2019\Day 4 - Secure Container\SecureContainer\bin\Debug\SecureContainer.exe.config
-C:\source\GitHub\AdventOfCode2019\Day 4 - Secure Container\SecureContainer\bin\Debug\SecureContainer.exe
-C:\source\GitHub\AdventOfCode2019\Day 4 - Secure Container\SecureContainer\bin\Debug\SecureContainer.pdb
-C:\source\GitHub\AdventOfCode2019\Day 4 - Secure Container\SecureContainer\obj\Debug\SecureContainer.csprojAssemblyReference.cache
-C:\source\GitHub\AdventOfCode2019\Day 4 - Secure Container\SecureContainer\obj\Debug\SecureContainer.csproj.CoreCompileInputs.cache
-C:\source\GitHub\AdventOfCode2019\Day 4 - Secure Container\SecureContainer\obj\Debug\SecureContainer.exe
-C:\source\GitHub\AdventOfCode2019\Day 4 - Secure Container\SecureContainer\obj\Debug\SecureContainer.pdb
