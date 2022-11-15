@@ -1,7 +1,0 @@
-C:\source\GitHub\AdventOfCode2019\Day 8 - Space Image Format\bin\Debug\SpaceImageFormat.exe.config
-C:\source\GitHub\AdventOfCode2019\Day 8 - Space Image Format\bin\Debug\SpaceImageFormat.exe
-C:\source\GitHub\AdventOfCode2019\Day 8 - Space Image Format\bin\Debug\SpaceImageFormat.pdb
-C:\source\GitHub\AdventOfCode2019\Day 8 - Space Image Format\obj\Debug\SpaceImageFormat.csprojAssemblyReference.cache
-C:\source\GitHub\AdventOfCode2019\Day 8 - Space Image Format\obj\Debug\SpaceImageFormat.csproj.CoreCompileInputs.cache
-C:\source\GitHub\AdventOfCode2019\Day 8 - Space Image Format\obj\Debug\SpaceImageFormat.exe
-C:\source\GitHub\AdventOfCode2019\Day 8 - Space Image Format\obj\Debug\SpaceImageFormat.pdb

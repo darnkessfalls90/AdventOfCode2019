@@ -1,7 +1,0 @@
-C:\source\GitHub\AdventOfCode2019\Day 3 - Crossed Wires\bin\Debug\CrossedWires.exe.config
-C:\source\GitHub\AdventOfCode2019\Day 3 - Crossed Wires\bin\Debug\CrossedWires.exe
-C:\source\GitHub\AdventOfCode2019\Day 3 - Crossed Wires\bin\Debug\CrossedWires.pdb
-C:\source\GitHub\AdventOfCode2019\Day 3 - Crossed Wires\obj\Debug\CrossedWires.csprojAssemblyReference.cache
-C:\source\GitHub\AdventOfCode2019\Day 3 - Crossed Wires\obj\Debug\CrossedWires.csproj.CoreCompileInputs.cache
-C:\source\GitHub\AdventOfCode2019\Day 3 - Crossed Wires\obj\Debug\CrossedWires.exe
-C:\source\GitHub\AdventOfCode2019\Day 3 - Crossed Wires\obj\Debug\CrossedWires.pdb

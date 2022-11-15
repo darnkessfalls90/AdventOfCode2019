@@ -1,8 +1,0 @@
-C:\source\GitHub\AdventOfCode2019\Day 6 - Universal Orbit Map\bin\Debug\UniversalOrbitMap.exe.config
-C:\source\GitHub\AdventOfCode2019\Day 6 - Universal Orbit Map\bin\Debug\UniversalOrbitMap.exe
-C:\source\GitHub\AdventOfCode2019\Day 6 - Universal Orbit Map\bin\Debug\UniversalOrbitMap.pdb
-C:\source\GitHub\AdventOfCode2019\Day 6 - Universal Orbit Map\obj\Debug\UniversalOrbitMap.csprojAssemblyReference.cache
-C:\source\GitHub\AdventOfCode2019\Day 6 - Universal Orbit Map\obj\Debug\UniversalOrbitMap.csproj.CoreCompileInputs.cache
-C:\source\GitHub\AdventOfCode2019\Day 6 - Universal Orbit Map\obj\Debug\UniversalOrbitMap.exe
-C:\source\GitHub\AdventOfCode2019\Day 6 - Universal Orbit Map\obj\Debug\UniversalOrbitMap.pdb
-C:\source\GitHub\AdventOfCode2019\Day 6 - Universal Orbit Map\bin\Debug\Input.txt

@@ -1,7 +1,0 @@
-C:\source\GitHub\AdventOfCode2019\Day 5 - Sunny With A Chance Cf Asteroids\bin\Debug\SunnyWithAChanceCfAsteroids.exe.config
-C:\source\GitHub\AdventOfCode2019\Day 5 - Sunny With A Chance Cf Asteroids\bin\Debug\SunnyWithAChanceCfAsteroids.exe
-C:\source\GitHub\AdventOfCode2019\Day 5 - Sunny With A Chance Cf Asteroids\bin\Debug\SunnyWithAChanceCfAsteroids.pdb
-C:\source\GitHub\AdventOfCode2019\Day 5 - Sunny With A Chance Cf Asteroids\obj\Debug\SunnyWithAChanceCfAsteroids.csprojAssemblyReference.cache
-C:\source\GitHub\AdventOfCode2019\Day 5 - Sunny With A Chance Cf Asteroids\obj\Debug\SunnyWithAChanceCfAsteroids.csproj.CoreCompileInputs.cache
-C:\source\GitHub\AdventOfCode2019\Day 5 - Sunny With A Chance Cf Asteroids\obj\Debug\SunnyWithAChanceCfAsteroids.exe
-C:\source\GitHub\AdventOfCode2019\Day 5 - Sunny With A Chance Cf Asteroids\obj\Debug\SunnyWithAChanceCfAsteroids.pdb
