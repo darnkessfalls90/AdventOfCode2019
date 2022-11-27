@@ -14,18 +14,23 @@ namespace TractorBeam
         BackgroundWorker bg;
         Queue<long> output = new Queue<long>();
         Queue<int> input = new Queue<int>();
+        private IntcodeInterpreter computer;
 
-        public void Begin(long[] program)
+        public AsyncIntcodeInterpreter()
         {
-            if (bg != null) bg.Dispose();
             bg = new BackgroundWorker();
             bg.DoWork += BackgroundWorker_DoWork;
 
-            var computer = new IntcodeInterpreter();
+            computer = new IntcodeInterpreter();
             computer.TakeInput += Computer_TakeInput;
             computer.HandleOutput += Computer_HandleOutput;
+        }
 
-            bg.RunWorkerAsync(new { computer = computer, program = program });
+        public void Begin(long[] program)
+        {
+            while (bg.IsBusy)
+                Thread.Sleep(10);
+            bg.RunWorkerAsync( program );
         }
 
         public void Dispose()
@@ -42,15 +47,14 @@ namespace TractorBeam
         public long[] RecieveOutput(int legnth)
         {
             while (output.Count < legnth)
-                Thread.Sleep(100);
+                Thread.Sleep(10);
             return output.DequeueMany(legnth).ToArray();
         }
 
         private void BackgroundWorker_DoWork(object? sender, DoWorkEventArgs e)
         {
-            
-            var program = ((dynamic)e.Argument).program as long[];
-            ((dynamic)e.Argument).computer.Interpret(ref program);
+            var program = (dynamic)e.Argument as long[];
+            computer.Interpret(ref program);
         }
 
         private void Computer_HandleOutput(long output, ref bool pause)
@@ -61,7 +65,7 @@ namespace TractorBeam
         private int? Computer_TakeInput()
         {
             while (this.input.Count == 0)
-                Thread.Sleep(100);
+                Thread.Sleep(10);
             return this.input.Dequeue();
         }
     }
